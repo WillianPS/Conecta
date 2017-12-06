@@ -9,9 +9,34 @@
 import UIKit
 
 class Crie_seu_Perfil: UIViewController {
-
+    
+    
+    @IBOutlet weak var LogoInicio: UIImageView!
+    
+    @IBOutlet weak var Login: UILabel!
+    
+    @IBOutlet weak var CampoLogin: UITextField!
+    
+    @IBOutlet weak var Senha: UILabel!
+    
+    
+    @IBOutlet weak var CampoSenha: UITextField!
+    
+    
+    @IBAction func LoginEmail(_ sender: UIButton) {
+    }
+    
+    @IBAction func LoginFacebook(_ sender: Any) {
+    }
+    
+    
+    @IBAction func BotaoCadastro(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
