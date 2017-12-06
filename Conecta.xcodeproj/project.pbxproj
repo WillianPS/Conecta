@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17097B481FD88C7100C3DC29 /* Crie seu grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17097B471FD88C7100C3DC29 /* Crie seu grupo.swift */; };
+		17097B4A1FD88E3600C3DC29 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17097B491FD88E3600C3DC29 /* Cadastro.swift */; };
 		178CC3B91FD6F2A700956753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3B81FD6F2A700956753 /* AppDelegate.swift */; };
 		178CC3BB1FD6F2A700956753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3BA1FD6F2A700956753 /* ViewController.swift */; };
 		178CC3BE1FD6F2A700956753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178CC3BC1FD6F2A700956753 /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		178CC3C31FD6F2A700956753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178CC3C11FD6F2A700956753 /* LaunchScreen.storyboard */; };
 		178CC3CE1FD6F2A700956753 /* ConectaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3CD1FD6F2A700956753 /* ConectaTests.swift */; };
 		178CC3D91FD6F2A700956753 /* ConectaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3D81FD6F2A700956753 /* ConectaUITests.swift */; };
-		17E5FF5A1FD86CA700A94D4B /* Crie seu Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5FF591FD86CA700A94D4B /* Crie seu Perfil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17097B471FD88C7100C3DC29 /* Crie seu grupo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crie seu grupo.swift"; sourceTree = "<group>"; };
+		17097B491FD88E3600C3DC29 /* Cadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
 		178CC3B51FD6F2A700956753 /* Conecta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conecta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178CC3B81FD6F2A700956753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178CC3BA1FD6F2A700956753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		178CC3D41FD6F2A700956753 /* ConectaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConectaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		178CC3D81FD6F2A700956753 /* ConectaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectaUITests.swift; sourceTree = "<group>"; };
 		178CC3DA1FD6F2A700956753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17E5FF591FD86CA700A94D4B /* Crie seu Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crie seu Perfil.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				178CC3B81FD6F2A700956753 /* AppDelegate.swift */,
-				17E5FF591FD86CA700A94D4B /* Crie seu Perfil.swift */,
+				17097B471FD88C7100C3DC29 /* Crie seu grupo.swift */,
+				17097B491FD88E3600C3DC29 /* Cadastro.swift */,
 				178CC3BA1FD6F2A700956753 /* ViewController.swift */,
 				178CC3BC1FD6F2A700956753 /* Main.storyboard */,
 				178CC3BF1FD6F2A700956753 /* Assets.xcassets */,
@@ -262,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E5FF5A1FD86CA700A94D4B /* Crie seu Perfil.swift in Sources */,
+				17097B481FD88C7100C3DC29 /* Crie seu grupo.swift in Sources */,
 				178CC3BB1FD6F2A700956753 /* ViewController.swift in Sources */,
+				17097B4A1FD88E3600C3DC29 /* Cadastro.swift in Sources */,
 				178CC3B91FD6F2A700956753 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

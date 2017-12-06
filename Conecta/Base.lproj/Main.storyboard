@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Crie seu Perfil-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Crie_seu_Perfil" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
         <!--Cadastro-->
         <scene sceneID="6vg-JZ-EPS">
             <objects>
-                <viewController title="Cadastro" id="CSf-UG-rv4" customClass="Crie_seu_Perfil" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cadastro" id="CSf-UG-rv4" customClass="Cadastro" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rkg-Tc-qn4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +149,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ScS-xp-o0e">
-                                <rect key="frame" x="74" y="58" width="227" height="209"/>
+                                <rect key="frame" x="74" y="53" width="230" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-iz-P8I">
@@ -164,6 +164,7 @@
                         <viewLayoutGuide key="safeArea" id="goZ-ea-Gbg"/>
                     </view>
                     <connections>
+                        <outlet property="CadastroBar" destination="MLc-bn-fIh" id="AsL-vg-A0P"/>
                         <outlet property="CampoLogin" destination="Wr0-wo-KzO" id="nrs-vF-TSy"/>
                         <outlet property="CampoSenha" destination="JVn-iz-P8I" id="njb-19-wU4"/>
                         <outlet property="Login" destination="sI8-Kx-GoH" id="jR2-A6-2YI"/>
@@ -173,7 +174,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NsE-PN-zaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="-237"/>
+            <point key="canvasLocation" x="1064.8" y="-237.03148425787109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="42l-RZ-sb4">
+            <objects>
+                <viewController id="NEW-GS-Ffu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3yB-10-cjP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-D6-Uel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="0.48013598489999998" blue="0.18782695090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Crie seu Grupo" id="Pf5-0E-LeS"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="k0O-x1-LeI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRv-B5-svZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="-243"/>
         </scene>
     </scenes>
     <resources>
