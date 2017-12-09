@@ -10,16 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var IconeCriarGrupo: UIImageView!
+
+    @IBOutlet weak var IconeCriarProjeto: UIImageView!
     
+    @IBOutlet weak var IconeEncontrarProjeto: UIImageView!
     
-    @IBOutlet weak var IconeEncontrarGrupo: UIImageView!
-    
-    
-    @IBAction func CriarGrupos(_ sender: UIButton) {
-    }
+
     
  
+    @IBAction func EncontrarProjetos(_ sender: Any) {
+    }
     
 
     override func viewDidLoad() {
@@ -33,5 +33,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func CriarProjeto(_ sender: UIButton) {
+    }
+    
+    
 }
 

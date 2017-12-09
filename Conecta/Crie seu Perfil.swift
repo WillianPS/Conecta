@@ -16,32 +16,28 @@ class Crie_seu_Perfil: UIViewController {
         var universidade:String
         var curso:String
         var habilidades:String
+        var imagemPerfil:String
      }
-
-    @IBOutlet weak var FotoPerfil: UIImageView!
+    
+    var DadosPerfil:[String] = []
     
    
-        
-   
+    @IBAction func ColocarFotoPerfil(_ sender: Any) {
+    }
     
-    @IBOutlet weak var NomePerfil: UILabel!
+   
     
     @IBOutlet weak var CampoNome: UITextField!
     
     
-    @IBOutlet weak var UniversidadePerfil: UILabel!
     
     @IBOutlet weak var CampoUniversidade: UITextField!
     
     
     
-    @IBOutlet weak var CursoPerfil: UILabel!
-    
     @IBOutlet weak var CampoCurso: UITextField!
     
     
-    
-    @IBOutlet weak var HabilidadesPerfil: UILabel!
     
     @IBOutlet weak var CampoHabilidades: UITextField!
     
@@ -56,6 +52,11 @@ class Crie_seu_Perfil: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+
+    @IBAction func GuardarDadosPerfil(_ sender: Any) {
+
     }
     
 

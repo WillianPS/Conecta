@@ -1,31 +1,44 @@
 //
-//  Cadastro.swift
+//  Crie seu Projeto.swift
 //  Conecta
 //
-//  Created by Willian Pereira da Silva on 06/12/17.
+//  Created by Willian Pereira da Silva on 07/12/17.
 //  Copyright © 2017 Willian Pereira da Silva. All rights reserved.
 //
 
 import UIKit
 
-class Cadastro: UIViewController {
+class Crie_seu_Projeto: UIViewController {
     
-    
-    @IBOutlet weak var Logo: UIImageView!
-    
-    
-    
-    @IBOutlet weak var CampoLogin: UITextField!
-    
-    @IBOutlet weak var CampoSenha: UITextField!
-    
-    
-    @IBOutlet weak var LoginEmail: UIButton!
-    
-    @IBOutlet weak var LoginFacebook: UIButton!
+    @IBAction func FotoProjeto(_ sender: Any) {
+    }
     
     
     
+    @IBOutlet weak var SelecionarInteresses: UILabel!
+    
+    
+    
+    @IBOutlet weak var CampoNomeProjeto: UITextField!
+    
+    
+
+    
+    @IBOutlet weak var CampoDescricaoProjeto: UITextField!
+    
+    
+    
+    
+    @IBOutlet weak var CampoHabilidadesDesejadas: UITextField!
+    
+    
+    
+    @IBOutlet weak var CampoNumeroParticipantes: UITextField!
+    
+    
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,23 +50,7 @@ class Cadastro: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
 
-    @IBAction func BotaoCadastro(_ sender: Any) {
-    }
-    
-    
-    @IBAction func LoginEmail(_ sender: UIButton) {
-    }
-    
-    
-    @IBAction func LoginFacebook(_ sender: UIButton) {
-      
-    }
-    
-    
-    
-    
     /*
     // MARK: - Navigation
 
