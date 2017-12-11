@@ -76,10 +76,10 @@ class Crie_seu_Perfil: UIViewController, UIImagePickerControllerDelegate, UINavi
     
 
     @IBAction func GuardarDadosPerfil(_ sender: Any) {
-        usuario.nome = ""
-        usuario.universidade = ""
-        usuario.curso = ""
-        usuario.habilidades = ""
+        usuario.nome = CampoNome.text!
+        usuario.universidade = CampoUniversidade.text!
+        usuario.curso = CampoCurso.text!
+        usuario.habilidades = CampoHabilidades.text!
         usuario.imagemPerfil = ""
     }
     

@@ -20,9 +20,32 @@ struct dadosProjeto {
 class Crie_seu_Projeto: UIViewController {
     
     var projeto:dadosProjeto = dadosProjeto(imagemProjeto: "", nome: "", descricao: "", habilidades: "", numeroParticipantes: "")
+   
     
-    @IBAction func FotoProjeto(_ sender: Any) {
+    let imagePickerProjeto = UIImagePickerController()
+    
+    
+    @IBOutlet weak var ImagemDoProjeto: UIImageView!
+    
+    
+
+    @IBAction func SelecionarImagemProjeto(_ sender: Any) {
+        imagePickerProjeto.allowsEditing = false
+        imagePickerProjeto.sourceType = .photoLibrary
+        
+        present(imagePickerProjeto, animated: true, completion: nil)
     }
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            ImagemDoProjeto.contentMode = .scaleAspectFit
+            ImagemDoProjeto.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     
     
     
@@ -66,10 +89,10 @@ class Crie_seu_Projeto: UIViewController {
 
     @IBAction func CriarProjeto(_ sender: UIButton) {
         projeto.imagemProjeto = ""
-        projeto.nome = ""
-        projeto.descricao = ""
-        projeto.habilidades = ""
-        projeto.numeroParticipantes = ""
+        projeto.nome = CampoNomeProjeto.text!
+        projeto.descricao = CampoDescricaoProjeto.text!
+        projeto.habilidades = CampoHabilidadesDesejadas.text!
+        projeto.numeroParticipantes = NumeroParticipantes.text!
         
     }
     
