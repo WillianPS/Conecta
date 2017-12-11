@@ -33,10 +33,12 @@ class Crie_seu_Projeto: UIViewController {
     
     
     
-    @IBOutlet weak var CampoNumeroParticipantes: UITextField!
+   
+    @IBOutlet weak var NumeroParticipantes: UITextField!
     
     
     
+    @IBOutlet weak var CampoObjetivo: UITextField!
     
 
     override func viewDidLoad() {

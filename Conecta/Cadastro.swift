@@ -26,6 +26,9 @@ class Cadastro: UIViewController {
     
     
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

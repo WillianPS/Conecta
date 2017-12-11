@@ -8,21 +8,25 @@
 
 import UIKit
 
+
+struct perfil {
+    var nome:String
+    var universidade:String
+    var curso:String
+    var habilidades:String
+    var imagemPerfil:String
+}
+
 class Crie_seu_Perfil: UIViewController {
-    
-    
-    struct perfil {
-        var nome:String
-        var universidade:String
-        var curso:String
-        var habilidades:String
-        var imagemPerfil:String
-     }
-    
-    var DadosPerfil:[String] = []
-    
+    var usuario:perfil = perfil(nome: "", universidade: "", curso: "", habilidades: "", imagemPerfil: "")
+
    
     @IBAction func ColocarFotoPerfil(_ sender: Any) {
+        usuario.nome = ""
+        usuario.universidade = ""
+        usuario.curso = ""
+        usuario.habilidades = ""
+        usuario.imagemPerfil = ""
     }
     
    
