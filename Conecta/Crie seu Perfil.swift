@@ -17,15 +17,33 @@ struct perfil {
     var imagemPerfil:String
 }
 
-class Crie_seu_Perfil: UIViewController {
+class Crie_seu_Perfil: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     var usuario:perfil = perfil(nome: "", universidade: "", curso: "", habilidades: "", imagemPerfil: "")
+    
+    let imagePicker = UIImagePickerController()
 
    
-    @IBAction func ColocarFotoPerfil(_ sender: Any) {
-  
+    @IBOutlet weak var imagemdePerfil: UIImageView!
+    
+    //botão do perfil (transparente em cima da imagem)
+    @IBAction func CarregarImagemPerfil(_ sender: UIButton) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
     }
     
-   
+    
+    //função para guardar a imagem escolhida pelo usuário
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imagemdePerfil.contentMode = .scaleAspectFit
+            imagemdePerfil.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBOutlet weak var CampoNome: UITextField!
     
@@ -45,6 +63,8 @@ class Crie_seu_Perfil: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
 
         // Do any additional setup after loading the view.
     }

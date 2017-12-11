@@ -248,14 +248,15 @@
                                     <segue destination="DR8-n1-jAI" kind="showDetail" id="z0J-M1-jcE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZk-7n-HkT">
-                                <rect key="frame" x="0.0" y="64" width="321" height="137"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagemPerfil" translatesAutoresizingMaskIntoConstraints="NO" id="4LH-75-LpO">
+                                <rect key="frame" x="0.0" y="64" width="320" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="ImagemPerfil">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy3-r5-7kB">
+                                <rect key="frame" x="-1" y="64" width="320" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="ColocarFotoPerfil:" destination="NEW-GS-Ffu" eventType="touchUpInside" id="bRO-Ye-U6m"/>
+                                    <action selector="CarregarImagemPerfil:" destination="NEW-GS-Ffu" eventType="touchUpInside" id="aHY-Re-wgp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -268,6 +269,7 @@
                         <outlet property="CampoHabilidades" destination="C2F-EK-eUZ" id="At8-1H-O4D"/>
                         <outlet property="CampoNome" destination="X5n-eF-UIA" id="vdr-za-RGV"/>
                         <outlet property="CampoUniversidade" destination="wzo-of-VNN" id="3EE-1P-7tf"/>
+                        <outlet property="imagemdePerfil" destination="4LH-75-LpO" id="MJr-MA-Exf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRv-B5-svZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -289,7 +291,6 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="ColocarFotoPerfil:" destination="NEW-GS-Ffu" eventType="touchUpInside" id="kaY-Ew-C4i"/>
                                     <action selector="FotoProjeto:" destination="DR8-n1-jAI" eventType="touchUpInside" id="dJH-eh-WXq"/>
                                 </connections>
                             </button>
@@ -356,17 +357,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-3Z-Iv8">
-                                <rect key="frame" x="30" y="689" width="247" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.46770495176315308" blue="0.40863233804702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="OK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="CriarProjeto:" destination="DR8-n1-jAI" eventType="touchUpInside" id="stx-kF-Az0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Números de participantes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bd-VK-Jd1">
                                 <rect key="frame" x="30" y="528" width="210" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -381,6 +371,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-3Z-Iv8">
+                                <rect key="frame" x="27" y="694" width="247" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.46770495176315308" blue="0.40863233804702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CriarProjeto:" destination="DR8-n1-jAI" eventType="touchUpInside" id="stx-kF-Az0"/>
+                                    <segue destination="he5-j5-tWH" kind="show" id="1B4-0j-oEz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="cGt-A6-k9j"/>
@@ -398,6 +400,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4L-qw-Jjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3217.5" y="-238.73239436619718"/>
+        </scene>
+        <!--Tela Do Projeto-->
+        <scene sceneID="IkQ-gG-zSl">
+            <objects>
+                <viewController id="he5-j5-tWH" customClass="TelaDoProjeto" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2G4-M6-93G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gdn-fT-WTT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3t1-ks-jpw">
+                                <rect key="frame" x="70" y="166" width="176" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Discussão"/>
+                                    <segment title="Informações"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEI-AI-tLS">
+                                <rect key="frame" x="21" y="501" width="278" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.46770495176315308" blue="0.40863233804702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Criar discussão">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dht-3O-nWB">
+                                <rect key="frame" x="47" y="252" width="240" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Blx-pn-dOp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPb-l2-Epe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4177.5" y="-315.84507042253523"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bMg-Kw-Ejg">

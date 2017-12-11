@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17097B4A1FD88E3600C3DC29 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17097B491FD88E3600C3DC29 /* Cadastro.swift */; };
+		171C48E81FDED17D00FE02FF /* TelaDoProjeto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C48E71FDED17D00FE02FF /* TelaDoProjeto.swift */; };
 		17241A501FD9CDE000850E53 /* Crie seu Projeto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17241A4F1FD9CDE000850E53 /* Crie seu Projeto.swift */; };
 		178CC3B91FD6F2A700956753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3B81FD6F2A700956753 /* AppDelegate.swift */; };
 		178CC3BB1FD6F2A700956753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3BA1FD6F2A700956753 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		17097B491FD88E3600C3DC29 /* Cadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
+		171C48E71FDED17D00FE02FF /* TelaDoProjeto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDoProjeto.swift; sourceTree = "<group>"; };
 		17241A4F1FD9CDE000850E53 /* Crie seu Projeto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crie seu Projeto.swift"; sourceTree = "<group>"; };
 		178CC3B51FD6F2A700956753 /* Conecta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conecta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178CC3B81FD6F2A700956753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				178CC3B81FD6F2A700956753 /* AppDelegate.swift */,
 				178CC3BA1FD6F2A700956753 /* ViewController.swift */,
 				178CC3BC1FD6F2A700956753 /* Main.storyboard */,
+				171C48E71FDED17D00FE02FF /* TelaDoProjeto.swift */,
 				17241A4F1FD9CDE000850E53 /* Crie seu Projeto.swift */,
 				17097B491FD88E3600C3DC29 /* Cadastro.swift */,
 				17E808D41FD972EB0053F8A1 /* Crie seu Perfil.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171C48E81FDED17D00FE02FF /* TelaDoProjeto.swift in Sources */,
 				178CC3BB1FD6F2A700956753 /* ViewController.swift in Sources */,
 				17097B4A1FD88E3600C3DC29 /* Cadastro.swift in Sources */,
 				17241A501FD9CDE000850E53 /* Crie seu Projeto.swift in Sources */,

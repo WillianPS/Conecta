@@ -1,33 +1,17 @@
 //
-//  Cadastro.swift
+//  TelaDoProjeto.swift
 //  Conecta
 //
-//  Created by Willian Pereira da Silva on 06/12/17.
+//  Created by Willian Pereira da Silva on 11/12/17.
 //  Copyright © 2017 Willian Pereira da Silva. All rights reserved.
 //
 
 import UIKit
 
-class Cadastro: UIViewController {
+class TelaDoProjeto: UIViewController {
     
     
-    @IBOutlet weak var Logo: UIImageView!
-    
-    
-    @IBOutlet weak var CampoLogin: UITextField!
-    
-    @IBOutlet weak var CampoSenha: UITextField!
-    
-    
-    @IBOutlet weak var LoginEmail: UIButton!
-    
-    @IBOutlet weak var LoginFacebook: UIButton!
-    
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,23 +23,7 @@ class Cadastro: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
 
-    @IBAction func BotaoCadastro(_ sender: Any) {
-    }
-    
-    
-    @IBAction func LoginEmail(_ sender: UIButton) {
-    }
-    
-    
-    @IBAction func LoginFacebook(_ sender: UIButton) {
-      
-    }
-    
-    
-    
-    
     /*
     // MARK: - Navigation
 
