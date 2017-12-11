@@ -69,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="S4N-b5-DFD"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="IconeCriarProjeto" destination="zdP-A6-3eh" id="4qY-8A-ECb"/>
                         <outlet property="IconeEncontrarProjeto" destination="l6a-hs-WpC" id="hf1-ZX-j3L"/>
@@ -83,43 +84,43 @@
             <objects>
                 <viewController title="Cadastro" id="CSf-UG-rv4" customClass="Cadastro" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rkg-Tc-qn4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="610"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4no-NM-Mnk">
-                                <rect key="frame" x="47" y="328" width="112" height="21"/>
+                                <rect key="frame" x="47" y="312" width="112" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ScS-xp-o0e">
-                                <rect key="frame" x="85" y="79" width="165" height="154"/>
+                                <rect key="frame" x="85" y="73" width="172" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-iz-P8I">
-                                <rect key="frame" x="47" y="357" width="225" height="30"/>
+                                <rect key="frame" x="47" y="341" width="225" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sI8-Kx-GoH">
-                                <rect key="frame" x="48" y="247" width="71" height="21"/>
+                                <rect key="frame" x="48" y="236" width="71" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wr0-wo-KzO">
-                                <rect key="frame" x="48" y="276" width="225" height="30"/>
+                                <rect key="frame" x="48" y="265" width="225" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-cn-4kZ">
-                                <rect key="frame" x="47" y="419" width="225" height="41"/>
+                                <rect key="frame" x="47" y="398" width="225" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.46625295489146523" blue="0.40610746336383641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -131,7 +132,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-6a-web">
-                                <rect key="frame" x="48" y="478" width="225" height="41"/>
+                                <rect key="frame" x="48" y="457" width="225" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.19417077410071362" green="0.36737239409268679" blue="0.81286168981481488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -143,9 +144,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAv-lO-NT8">
-                                <rect key="frame" x="37" y="552" width="246" height="30"/>
+                                <rect key="frame" x="37" y="525" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="Não tem uma conta? Cadastre-se">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -154,15 +155,10 @@
                                     <segue destination="NEW-GS-Ffu" kind="show" id="mDr-ce-fLh"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="anb-IR-rvQ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="546"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="goZ-ea-Gbg"/>
                     </view>
-                    <size key="freeformSize" width="320" height="610"/>
                     <connections>
                         <outlet property="CampoLogin" destination="Wr0-wo-KzO" id="YDc-jy-9f7"/>
                         <outlet property="CampoSenha" destination="JVn-iz-P8I" id="hPA-Gk-L52"/>
@@ -178,7 +174,7 @@
         <!--Crie seu Perfil-->
         <scene sceneID="42l-RZ-sb4">
             <objects>
-                <viewController id="NEW-GS-Ffu" customClass="Crie_seu_Perfil" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Crie seu Perfil" id="NEW-GS-Ffu" customClass="Crie_seu_Perfil" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3yB-10-cjP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,7 +277,7 @@
         <!--Crie seu Projeto-->
         <scene sceneID="wSx-QP-2D1">
             <objects>
-                <viewController id="DR8-n1-jAI" customClass="Crie_seu_Projeto" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Crie seu Projeto" id="DR8-n1-jAI" customClass="Crie_seu_Projeto" customModule="Conecta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7iN-yJ-PJ6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="760"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
