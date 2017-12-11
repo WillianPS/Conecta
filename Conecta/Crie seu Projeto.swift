@@ -8,7 +8,18 @@
 
 import UIKit
 
+
+struct dadosProjeto {
+    var imagemProjeto:String
+    var nome:String
+    var descricao:String
+    var habilidades:String
+    var numeroParticipantes:String
+}
+
 class Crie_seu_Projeto: UIViewController {
+    
+    var projeto:dadosProjeto = dadosProjeto(imagemProjeto: "", nome: "", descricao: "", habilidades: "", numeroParticipantes: "")
     
     @IBAction func FotoProjeto(_ sender: Any) {
     }
@@ -53,6 +64,15 @@ class Crie_seu_Projeto: UIViewController {
     }
     
 
+    @IBAction func CriarProjeto(_ sender: UIButton) {
+        projeto.imagemProjeto = ""
+        projeto.nome = ""
+        projeto.descricao = ""
+        projeto.habilidades = ""
+        projeto.numeroParticipantes = ""
+        
+    }
+    
     /*
     // MARK: - Navigation
 

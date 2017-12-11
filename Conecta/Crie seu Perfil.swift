@@ -22,11 +22,7 @@ class Crie_seu_Perfil: UIViewController {
 
    
     @IBAction func ColocarFotoPerfil(_ sender: Any) {
-        usuario.nome = ""
-        usuario.universidade = ""
-        usuario.curso = ""
-        usuario.habilidades = ""
-        usuario.imagemPerfil = ""
+  
     }
     
    
@@ -60,7 +56,11 @@ class Crie_seu_Perfil: UIViewController {
     
 
     @IBAction func GuardarDadosPerfil(_ sender: Any) {
-
+        usuario.nome = ""
+        usuario.universidade = ""
+        usuario.curso = ""
+        usuario.habilidades = ""
+        usuario.imagemPerfil = ""
     }
     
 
