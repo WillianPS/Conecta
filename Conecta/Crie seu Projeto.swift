@@ -28,51 +28,22 @@ class Crie_seu_Projeto: UIViewController {
     @IBOutlet weak var ImagemDoProjeto: UIImageView!
     
     
-
-    @IBAction func SelecionarImagemProjeto(_ sender: Any) {
-        imagePickerProjeto.allowsEditing = false
-        imagePickerProjeto.sourceType = .photoLibrary
-        
-        present(imagePickerProjeto, animated: true, completion: nil)
-    }
     
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    /*func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             ImagemDoProjeto.contentMode = .scaleAspectFit
             ImagemDoProjeto.image = pickedImage
         }
         dismiss(animated: true, completion: nil)
     }
+ */
     
     
-    
-    
-    
-    @IBOutlet weak var SelecionarInteresses: UILabel!
-    
-    
-    
-    @IBOutlet weak var CampoNomeProjeto: UITextField!
-    
-    
-
-    
-    @IBOutlet weak var CampoDescricaoProjeto: UITextField!
-    
-    
-    
-    
-    @IBOutlet weak var CampoHabilidadesDesejadas: UITextField!
     
     
     
    
-    @IBOutlet weak var NumeroParticipantes: UITextField!
     
-    
-    
-    @IBOutlet weak var CampoObjetivo: UITextField!
     
 
     override func viewDidLoad() {
@@ -88,12 +59,12 @@ class Crie_seu_Projeto: UIViewController {
     
 
     @IBAction func CriarProjeto(_ sender: UIButton) {
-        projeto.imagemProjeto = ""
+        /*projeto.imagemProjeto = ""
         projeto.nome = CampoNomeProjeto.text!
         projeto.descricao = CampoDescricaoProjeto.text!
         projeto.habilidades = CampoHabilidadesDesejadas.text!
         projeto.numeroParticipantes = NumeroParticipantes.text!
-        
+      */
     }
     
     /*
