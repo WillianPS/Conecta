@@ -18,6 +18,15 @@
 		178CC3CE1FD6F2A700956753 /* ConectaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3CD1FD6F2A700956753 /* ConectaTests.swift */; };
 		178CC3D91FD6F2A700956753 /* ConectaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178CC3D81FD6F2A700956753 /* ConectaUITests.swift */; };
 		17E808D51FD972EB0053F8A1 /* Crie seu Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E808D41FD972EB0053F8A1 /* Crie seu Perfil.swift */; };
+		D6E0CF361FDF33DB00060EEA /* icone2.png in Resources */ = {isa = PBXBuildFile; fileRef = D6E0CF2E1FDF33D900060EEA /* icone2.png */; };
+		D6E0CF381FDF33DB00060EEA /* icone1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6E0CF301FDF33DA00060EEA /* icone1.png */; };
+		D6E0CF391FDF33DB00060EEA /* icone3.png in Resources */ = {isa = PBXBuildFile; fileRef = D6E0CF311FDF33DA00060EEA /* icone3.png */; };
+		D6E0CF3B1FDF33DB00060EEA /* marcaconecta.png in Resources */ = {isa = PBXBuildFile; fileRef = D6E0CF331FDF33DA00060EEA /* marcaconecta.png */; };
+		D6E0CF3D1FDF343100060EEA /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E0CF3C1FDF343100060EEA /* OnBoarding.storyboard */; };
+		D6E0CF3F1FDF38C500060EEA /* PrimeiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0CF3E1FDF38C500060EEA /* PrimeiraViewController.swift */; };
+		D6E0CF411FDF38EC00060EEA /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0CF401FDF38EB00060EEA /* SegundaViewController.swift */; };
+		D6E0CF431FDF38F300060EEA /* TerceiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0CF421FDF38F200060EEA /* TerceiraViewController.swift */; };
+		D6E0CF451FDF38FD00060EEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0CF441FDF38FD00060EEA /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,15 @@
 		178CC3D81FD6F2A700956753 /* ConectaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectaUITests.swift; sourceTree = "<group>"; };
 		178CC3DA1FD6F2A700956753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E808D41FD972EB0053F8A1 /* Crie seu Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crie seu Perfil.swift"; sourceTree = "<group>"; };
+		D6E0CF2E1FDF33D900060EEA /* icone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone2.png; sourceTree = "<group>"; };
+		D6E0CF301FDF33DA00060EEA /* icone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone1.png; sourceTree = "<group>"; };
+		D6E0CF311FDF33DA00060EEA /* icone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone3.png; sourceTree = "<group>"; };
+		D6E0CF331FDF33DA00060EEA /* marcaconecta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcaconecta.png; sourceTree = "<group>"; };
+		D6E0CF3C1FDF343100060EEA /* OnBoarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		D6E0CF3E1FDF38C500060EEA /* PrimeiraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeiraViewController.swift; sourceTree = "<group>"; };
+		D6E0CF401FDF38EB00060EEA /* SegundaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		D6E0CF421FDF38F200060EEA /* TerceiraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerceiraViewController.swift; sourceTree = "<group>"; };
+		D6E0CF441FDF38FD00060EEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +123,16 @@
 		178CC3B71FD6F2A700956753 /* Conecta */ = {
 			isa = PBXGroup;
 			children = (
+				D6E0CF3C1FDF343100060EEA /* OnBoarding.storyboard */,
+				D6E0CF301FDF33DA00060EEA /* icone1.png */,
+				D6E0CF2E1FDF33D900060EEA /* icone2.png */,
+				D6E0CF311FDF33DA00060EEA /* icone3.png */,
+				D6E0CF331FDF33DA00060EEA /* marcaconecta.png */,
 				178CC3B81FD6F2A700956753 /* AppDelegate.swift */,
+				D6E0CF3E1FDF38C500060EEA /* PrimeiraViewController.swift */,
+				D6E0CF401FDF38EB00060EEA /* SegundaViewController.swift */,
+				D6E0CF421FDF38F200060EEA /* TerceiraViewController.swift */,
+				D6E0CF441FDF38FD00060EEA /* OnboardingViewController.swift */,
 				178CC3BA1FD6F2A700956753 /* ViewController.swift */,
 				178CC3BC1FD6F2A700956753 /* Main.storyboard */,
 				171C48E71FDED17D00FE02FF /* TelaDoProjeto.swift */,
@@ -244,9 +271,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E0CF3B1FDF33DB00060EEA /* marcaconecta.png in Resources */,
 				178CC3C31FD6F2A700956753 /* LaunchScreen.storyboard in Resources */,
+				D6E0CF361FDF33DB00060EEA /* icone2.png in Resources */,
+				D6E0CF391FDF33DB00060EEA /* icone3.png in Resources */,
 				178CC3C01FD6F2A700956753 /* Assets.xcassets in Resources */,
 				178CC3BE1FD6F2A700956753 /* Main.storyboard in Resources */,
+				D6E0CF381FDF33DB00060EEA /* icone1.png in Resources */,
+				D6E0CF3D1FDF343100060EEA /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				171C48E81FDED17D00FE02FF /* TelaDoProjeto.swift in Sources */,
+				D6E0CF3F1FDF38C500060EEA /* PrimeiraViewController.swift in Sources */,
 				178CC3BB1FD6F2A700956753 /* ViewController.swift in Sources */,
 				17097B4A1FD88E3600C3DC29 /* Cadastro.swift in Sources */,
+				D6E0CF411FDF38EC00060EEA /* SegundaViewController.swift in Sources */,
 				17241A501FD9CDE000850E53 /* Crie seu Projeto.swift in Sources */,
+				D6E0CF431FDF38F300060EEA /* TerceiraViewController.swift in Sources */,
+				D6E0CF451FDF38FD00060EEA /* OnboardingViewController.swift in Sources */,
 				17E808D51FD972EB0053F8A1 /* Crie seu Perfil.swift in Sources */,
 				178CC3B91FD6F2A700956753 /* AppDelegate.swift in Sources */,
 			);
